@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.outrightwings.horse_potions.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "horse_potions.refmap.json",
+  "mixins": [
+
+  ],
+  "client": [
+  ],
+  "minVersion": "0.8"
+}
