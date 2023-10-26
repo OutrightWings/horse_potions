@@ -1,6 +1,7 @@
 package com.outrightwings.horse_potions.item;
 
 import com.outrightwings.horse_potions.Config;
+import com.outrightwings.horse_potions.util.PrintHorseStats;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
@@ -33,7 +34,7 @@ public class StatPotion extends Item {
                 if (player == null || !player.getAbilities().instabuild) {
                     player.setItemInHand(hand, ItemUtils.createFilledResult(stack, player, new ItemStack(Items.GLASS_BOTTLE)));
                 }
-
+                PrintHorseStats.printHorseStatsToChat(player,target);
                 return InteractionResult.sidedSuccess(player.level().isClientSide);
             }
         }

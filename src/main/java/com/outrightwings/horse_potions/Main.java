@@ -19,6 +19,7 @@ public class Main
 
         modEventBus.addListener(this::commonSetup);
         Items.ITEMS.register(modEventBus);
+        Items.CREATIVE_MODE_TABS.register(modEventBus);
         ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER,Config.SPEC);
     }
 

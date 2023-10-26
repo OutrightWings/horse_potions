@@ -16,4 +16,8 @@ public class Converter {
     public static double genericSpeedToBlocPerSec(double speed) {
         return 42.157796 * speed;
     }
+
+    public static double round(double n, int decimals) {
+        return Math.floor(n * Math.pow(10, decimals)) / Math.pow(10, decimals);
+    }
 }

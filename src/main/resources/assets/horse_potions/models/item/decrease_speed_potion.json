@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "horse_potions:item/stat_potion"
+        "layer0": "horse_potions:item/decrease_speed"
     }
 }
